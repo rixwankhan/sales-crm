@@ -1,6 +1,10 @@
 @extends('layouts.admin')
 @section('content')
 <style>
+.horizontal-scrollable > .row { 
+	overflow-x: auto; 
+	white-space: nowrap; 
+}
 .card.draggable {
     margin-bottom: 1rem;
     cursor: grab;
@@ -26,7 +30,7 @@
 
     <div class="card-body">
 
-<div class="container-fluid pt-3">
+<div class="container-fluid pt-3 horizontal-scrollable">
     <div class="row flex-row flex-sm-nowrap py-3">
         
         @foreach ($deal_stage as $stage)
