@@ -26,11 +26,12 @@
                         <th width="10">
 
                         </th>
-                        <th>
-                            {{ trans('cruds.dealStage.fields.id') }}
-                        </th>
+
                         <th>
                             {{ trans('cruds.dealStage.fields.name') }}
+                        </th>
+                        <th>
+                            Order
                         </th>
                         <th>
                             &nbsp;
@@ -44,10 +45,10 @@
 
                             </td>
                             <td>
-                                {{ $dealStage->id ?? '' }}
+                                {{ $dealStage->name ?? '' }}
                             </td>
                             <td>
-                                {{ $dealStage->name ?? '' }}
+                                {{ $dealStage->order ?? '' }}
                             </td>
                             <td>
                                 @can('deal_stage_show')

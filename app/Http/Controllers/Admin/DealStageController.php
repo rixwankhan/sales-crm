@@ -20,7 +20,7 @@ class DealStageController extends Controller
     {
         abort_if(Gate::denies('deal_stage_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $dealStages = DealStage::all();
+        $dealStages = DealStage::orderBy('order')->get();
 
         return view('admin.dealStages.index', compact('dealStages'));
     }

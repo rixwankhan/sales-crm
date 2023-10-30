@@ -56,7 +56,7 @@ class DealStageSeeder extends Seeder
             [
                 'id'             => 7,
                 'order'             => 7,
-                'name'           => 'Goods',
+                'name'           => 'Closed lost',
                 'created_at'     => '2023-10-25 18:46:47',
                 'updated_at'     => '2023-10-25 18:46:47',
             ],

@@ -23,6 +23,14 @@
                             {{ $dealStage->name }}
                         </td>
                     </tr>
+                    <tr>
+                        <th>
+                            Order
+                        </th>
+                        <td>
+                            {{ $dealStage->order }}
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <div class="form-group">
