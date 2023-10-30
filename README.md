@@ -10,13 +10,10 @@ Notice: seed is important, because it will create the first admin user for you.
 
 Run ```php artisan key:generate``` command.
 
-If you have file/photo fields, run ```php artisan storage:link``` command.
-
+Run ```php artisan storage:link``` command.
 
 And that's it, go to your domain and login:
 ### Default credentials
-<code> 
-Username: admin@admin.com
+<code> Username: admin@admin.com </code> 
+<code> Password: password </code> 
 
-Password: password 
-</code> 
