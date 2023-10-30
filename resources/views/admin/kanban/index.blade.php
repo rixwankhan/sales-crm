@@ -46,11 +46,11 @@
                         <div class="card draggable shadow-sm" id="cd<?php echo $deal->id; ?>" draggable="true" ondragstart="drag(event)">
                                 <div class="card-body p-2">
                                     <div class="card-title">
-                                        <a href="{{ route('admin.deals.show', ['deal' => $deal->id ]) }}" class="lead font-weight-light">{{ $deal->deal_name }}</a><br/>
+                                        <a href="{{ route('admin.deals.show', ['deal' => $deal->id ]) }}" class="lead font-weight-light"><p style="overflow: hidden;">{{ $deal->deal_name }}</p></a><br/>
                                         Source: <strong>{{ $deal->name }} </strong> <br/>
                                         Closing Date: {{ $deal->closing_date }} <br/>
                                         Amount: {{ $deal->amount }} <br/>
-                                        Description: {{ $deal->description }} <br/>
+                                        Description: <p style="overflow: hidden;">{{ $deal->description }}</p> <br/>
                                     </div>
                                     <a class="btn btn-outline-dark btn-sm" href="{{ route('admin.deals.edit', ['deal' => $deal->id ]) }}">Edit Deal</a>
                                 </div>
